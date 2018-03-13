@@ -1,0 +1,18 @@
+
+{
+    "name": "Twitter repository shared",
+    "version": "1.0.0",
+    "description": "Post twitte with yours repositories.",
+    "content_scripts": [ {
+      "js": [ "jquery.min.js", "obelisk.min.js", "twitter-share.js" ],
+      "matches": [ "http://github.com/*/*", "https://github.com/*/*" ]
+    }],
+    "permissions": [
+      "storage"
+    ],
+    "icons" : {
+      "48" : "icon-48.png",
+      "128" : "icon-128.png"
+    },
+    "manifest_version": 2
+  }
